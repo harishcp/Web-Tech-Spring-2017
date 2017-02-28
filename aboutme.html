@@ -1,42 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+       
+        $("#div2").fadeIn("slow");
+       
+    });
+});
+</script>
 <style>
-.center {
-    text-align: center;
-    border: 3px solid green;
-}
+	body{
+		
+				width:100%; height:900px; background-image: url(BGImage.jpg); background-repeat:no-repeat; background-size: 1500px 600px;"
+			}
+
+			p{
+				text-align:justify;
+				color:#b2139f;
+				font-size:25px;
+		}
+
 </style>
-<meta charset="UTF-8">
-  
-<title>Aboutme</title>
-   
-<link rel="stylesheet" type="text/css" href="styles.css">
 
 </head>
-
 <body>
-<ul class="topnav">
 
-<li><a href="./index.html">Home</a></li>
-   
-<li><a class="active" href="#aboutme.html">AboutMe</a></li>
-    
-<li><a href="./skills.html">Skills</a></li>
-    
-<li><a href="./contactme.html">ContactMe</a></li>
 
-</ul>
-<div id="aboutme">
-<br><br><br><br><br><br><br><br><i>
-I am Harish from India currently pursuing Masters in Information Systems and I have an experince of 5 years in IT field. I worked with various clients like CapitalOne, AllState Insurance, British American Tobacco and Standard Bank of South Africa.</i>
+<div  style = "border: 1px solid black; width:100%; height:900px; background-image: url(6B.jpg)">
+<button style="margin-left:50%;"><i>Click to show about</i></button><br><br>
+
+
+<div id="div2" style="width:80px;height:80px;display:none;margin-left:30%;
+				margin-top:90px;
+				border:1px; 
+				width:800px; 
+				height:700px;"><i><b><u>About</i></b></u>
+<p><i>
+Hello, I am Harish currently pursuing MS in Marist. I have an experience of 5 years in IT industry with Testing and Agile. I am proficient in .NET programming and also C,C++.
+</i></p> 
+</div>
 </div>
 
-
-<script src="app.js"></script>
-
 </body>
-
 </html>
